@@ -37,10 +37,10 @@ const Property = () => {
         <p><strong>Date Posted:</strong> {new Date(item.date_posted).toLocaleDateString()}</p>
         {item.image && (
           <img
-            src={`http://localhost:8000${item.image}`}
+            src={item.image}
             alt={item.title}
-            width="200"
-            height="150"
+            width="300"
+            height="170"
           />
         )}
       </div>

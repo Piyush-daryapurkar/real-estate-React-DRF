@@ -1,6 +1,84 @@
+/* nav css */
+/* Nav.css */
+
+.nav-bar {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+
+/* property css */
+
 .property-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
@@ -17,11 +95,116 @@
 .property-card:hover {
   transform: scale(1.02);
 }
-
 .property-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
   border-radius: 8px;
+}
+
+
+
+/* Reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Each section full screen */
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Colored backgrounds */
+.bg-properties {
+  color: white;
+  background-color: #1377a9;
+}
+
+.bg-pg {
+  background: linear-gradient(135deg, #28a745, #a0e06b);
+  color: white;
+}
+
+.bg-buy {
+  background: linear-gradient(135deg, #ffc107, #ff8c00);
+  color: #212529;
+}
+
+.bg-contact {
+  background: linear-gradient(135deg, #17a2b8, #6dd5ed);
+  color: white;
+}
+
+/* Center box (like card) */
+.card-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #c91818;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.card-box:hover {
+  transform: scale(1.03);
+}
+
+/* Text */
+.card-box h2 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.card-box p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Button */
+.btn {
+  background-color: #343a40;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-box {
+    padding: 25px 20px;
+  }
+
+  .card-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-box p {
+    font-size: 1rem;
+  }
 }
