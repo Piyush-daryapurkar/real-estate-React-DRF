@@ -28,7 +28,29 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+        <div className="about-section">
+        <h1 id="abt-h1">About EstateHub Platform</h1>
+        <p id="abt-para">India's trusted platform for buying, selling, and renting properties across cities and towns.</p>
+        <div className="stats-grid">
+          <div className="stat-box">
+            <h1>Properties Listed</h1>
+            <h3>5,000+</h3>
+            <p>Across India</p>
+          </div>
+          <div className="stat-box">
+            <h1>Happy Clients</h1>
+            <h3>2,500+</h3>
+            <p>Families & Investors</p>
+          </div>
+          <div className="stat-box">
+            <h1>Real Estate Agents</h1>
+            <h3>800+</h3>
+            <p>Trusted Professionals</p>
+          </div>
+        </div>
+      </div>
     </div>
+    
   );
 };
 
