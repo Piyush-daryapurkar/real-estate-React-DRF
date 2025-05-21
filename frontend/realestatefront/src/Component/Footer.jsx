@@ -51,7 +51,7 @@ function Footer() {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>&copy; 2024 Ad Connect Website. All Rights Reserved. Made By Piyush Daryapurkar</p>
+        <p>&copy; 2024 Ad Connect Website. All Rights Reserved. Made By hariom</p>
       </div>
     </footer>
   );

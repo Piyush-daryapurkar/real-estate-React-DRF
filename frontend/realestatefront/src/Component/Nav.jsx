@@ -17,7 +17,7 @@ const Nav = () => (
           <li><Link to="/servies">Services</Link></li>
           <li><Link to="/property">Properties</Link></li>
           <li><Link to="/propertyform">Buy/Sell/Rent</Link></li>
-          <li><Link to="/pg">PG</Link></li>
+          <li><Link to="/hotelPG">PG</Link></li>
         </ul>
       </div>
     </nav>

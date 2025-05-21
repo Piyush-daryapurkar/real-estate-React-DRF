@@ -49,7 +49,8 @@ CORS_ALLOWED_ORIGINS = [
 
 # Media files (uploaded images, etc.)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 ROOT_URLCONF = 'realestate.urls'
 

@@ -8,6 +8,10 @@ import Footer from './Component/Footer';
 import Home from './Component/Index';
 import Serviese from './Component/Serviese';
 import PropertyForm from './Component/PropertyForm';
+// import AvailableRooms from './Component/AvalableRooms';
+// import PGMonthlyBill from './Component/PGMonthlyBill';
+// import BookingForm from './Component/BookingForm';
+import HotelBookingModule from './Component/HotelBookingModule';
 
 const App = () => {
   return (
@@ -21,6 +25,8 @@ const App = () => {
           <Route path='/property' element={<Property/>}></Route>
           <Route path='/servies' element={<Serviese/>}></Route>
           <Route path='propertyform' element={<PropertyForm/>}></Route>
+          <Route  path='/hotelPG' element={<HotelBookingModule/>}></Route>
+           
       </Routes>
       <Footer/>
     </Router>

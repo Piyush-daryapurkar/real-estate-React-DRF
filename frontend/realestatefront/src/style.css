@@ -896,3 +896,96 @@ textarea {
 .contact-btn:hover {
   background-color: #00e6b8;
 }
+
+.form-container {
+  padding: 20px;
+  background: #f8f9fa;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.property-form input,
+.property-form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.property-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.property-form button:hover {
+  background-color: #0056b3;
+}
+.booking-container {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.booking-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input-group button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.room-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.room-list li {
+  background-color: #f9f9f9;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+}
